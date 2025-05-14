@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "1017920310095",
+    "firebase_url": "https://hello-world-c2bdf-default-rtdb.firebaseio.com",
+    "project_id": "hello-world-c2bdf",
+    "storage_bucket": "hello-world-c2bdf.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1017920310095:android:c299d3bf03c20855acd33a",
+        "android_client_info": {
+          "package_name": "com.example.hello_world"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCa_RoEMIFwHCUExApTcpsVt4OzWiQK1Cs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1017920310095:android:94dd5e4300b61208acd33a",
+        "android_client_info": {
+          "package_name": "com.example.hello_world_2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCa_RoEMIFwHCUExApTcpsVt4OzWiQK1Cs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1017920310095:android:17da7c4eece27626acd33a",
+        "android_client_info": {
+          "package_name": "com.example.hello_world_3"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCa_RoEMIFwHCUExApTcpsVt4OzWiQK1Cs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
