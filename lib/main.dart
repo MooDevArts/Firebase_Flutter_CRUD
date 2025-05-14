@@ -127,10 +127,6 @@ class _MyHomePageState extends State<MyHomePage> {
         // Plus 1
           FloatingActionButton(
             onPressed: () async {
-              await DatabaseService().create(
-                path: "path1",
-                data: "{'count' : 4}",
-              );
               context.read<CountProvider>().increaseCount();
             },
             tooltip: 'Increment',
@@ -159,6 +155,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         ],
       ), // This trailing comma makes auto-formatting nicer for build methods.
+      
     );
   }
 }
