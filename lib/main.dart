@@ -65,6 +65,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+
   @override
   Widget build(BuildContext context) {
     // This method is rerun every time setState is called, for instance as done
@@ -108,7 +109,10 @@ class _MyHomePageState extends State<MyHomePage> {
               style: Theme.of(context).textTheme.headlineMedium,
             ),
             const Text('Value in DB:'),
-
+            Text(
+              context.watch<CountProvider>().valInDB?['count'].toString() ?? "",
+              style: Theme.of(context).textTheme.headlineMedium,
+            ),
           ],
         ),
       ),
@@ -116,7 +120,6 @@ class _MyHomePageState extends State<MyHomePage> {
         spacing: 10,
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
-
           // Minus 1
           FloatingActionButton(
             onPressed: () {
@@ -126,7 +129,7 @@ class _MyHomePageState extends State<MyHomePage> {
             child: const Icon(Icons.exposure_minus_1),
           ),
 
-        // Plus 1
+          // Plus 1
           FloatingActionButton(
             onPressed: () async {
               context.read<CountProvider>().increaseCount();
@@ -150,14 +153,13 @@ class _MyHomePageState extends State<MyHomePage> {
           // Delete
           FloatingActionButton(
             onPressed: () async {
-            context.read<CountProvider>().makeCountZero();
+              context.read<CountProvider>().makeCountZero();
             },
             tooltip: 'Delete',
             child: const Icon(Icons.delete_outlined),
           ),
         ],
       ), // This trailing comma makes auto-formatting nicer for build methods.
-      
     );
   }
 }
