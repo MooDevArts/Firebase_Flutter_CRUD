@@ -107,6 +107,8 @@ class _MyHomePageState extends State<MyHomePage> {
               context.watch<CountProvider>().count.toString(),
               style: Theme.of(context).textTheme.headlineMedium,
             ),
+            const Text('Value in DB:'),
+
           ],
         ),
       ),
