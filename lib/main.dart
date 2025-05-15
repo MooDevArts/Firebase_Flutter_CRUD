@@ -148,7 +148,7 @@ class _MyHomePageState extends State<MyHomePage> {
           // Delete
           FloatingActionButton(
             onPressed: () async {
-            await DatabaseService().delete(path: "path1");
+            context.read<CountProvider>().makeCountZero();
             },
             tooltip: 'Delete',
             child: const Icon(Icons.delete_outlined),
